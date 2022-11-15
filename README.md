@@ -5,3 +5,6 @@ The dataset is in JSON format and is inserted into the database using a python s
 
 Use:
 node app.js to check the application.
+
+Dataset used:
+https://www.kaggle.com/datasets/deepann/80000-steam-games-dataset

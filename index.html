@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <!-- <script>
+        function findGame(){
+    let game_list = document.getElementById('gameList')
+    let game_choices = ['HITMAN™ 2 - New York', 'Fury of Dracula: Digital Edition Make Your Kingdom', 'Pulseball', 'SteamVR' ,'Spaceslingers',
+    'Dark Lord: Peacemaker',
+    'Rick Henderson',
+    'Oniria Crimes',
+    'Monster Logic',
+    'Xenrai',
+    'Krum - Battle Arena - Yatur Warrior Skin',
+    'SULVER\'S JOURNEY',
+    'Red Sector',
+    'Mr.Mine']
+    for (let index = 0; index < game_choices.length; index++) {
+        const element = game_choices[index];
+        let option = document.createElement('option')
+        option.textContent = element
+        option.value = element
+        game_list.appendChild(option)
+        
+    }
+}
+    </script> -->
+</head>
+<body>
+    <form action="/" method="post" >
+        <b>
+            Select the game from the list below.
+        </b>
+        <!-- <select id = "gameList" name="game" onclick = "findGame()" >  
+            <option> ---Choose Game--- </option>  
+            <option> Among Us </option> 
+            </select>  -->
+        <input type="text" name="query">
+        
+        <b>
+            Select the CRUD operation.
+        </b>
+        <select name="operation" id="list">
+            <option> ---Choose Option--- </option>  
+            <option value="read"> read </option> 
+            <option value="delete">delete</option>
+            <option value="add">add</option>
+            </select> 
+        </select>
+        <p>
+            <input type="submit" value="submit">
+        </p>
+        <div>
+            ${games}
+        </div>
+    </form>
+</body>
+</html>
+

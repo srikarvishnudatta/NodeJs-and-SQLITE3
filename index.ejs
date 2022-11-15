@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+<body>
+    <form action="/" method="post" >
+        <b>
+            Select the game from the list.
+        </b>
+        <input type="text" name="query">
+       <% for(let i =0; i< 100; i++){ %>
+        <div>
+            name: <span>
+                <%= output[i].name %>
+            </span>
+        </div>
+        <% }%>
+        <b>
+            Select the CRUD operation.
+        </b>
+        <select name="operation" id="list">
+            <option> ---Choose Option--- </option>  
+            <option value="read"> read </option> 
+            <option value="delete">delete</option>
+            <option value="add">add</option>
+            <option value="modify">modify</option>
+            </select> 
+        </select>
+        <p>
+            <input type="submit" value="submit">
+        </p>
+    </form>
+</body>
+</html>
+
